@@ -7,29 +7,49 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
 class QuestionVC: UIViewController {
 
+    
+    @IBOutlet weak var lblTotal: UILabel!
+    @IBOutlet weak var lblRight: UILabel!
+    @IBOutlet weak var lblWrong: UILabel!
+    
+    @IBOutlet weak var lblQuestion: UILabel!
+    
+    @IBOutlet weak var lblTitle: UILabel!
+    
+    @IBOutlet weak var bottomAdVew: GADBannerView!
+    
+    var mathOperation: MathOperation!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        print(mathOperation.menuSelection)
         // Do any additional setup after loading the view.
-    }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        let request = GADRequest()
+        request.testDevices = [kGADSimulatorID]
+        
+        bottomAdVew.adUnitID = "ca-app-pub-7438198586349335/3637278446"
+        
+        bottomAdVew.rootViewController = self
+        bottomAdVew.load(request)
+        
+        lblTitle.text = "\(mathOperation.menuSelection) Quiz"
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func onAnswerSelected(_ sender: BorderButton) {
     }
-    */
+    @IBAction func btnRestart(_ sender: Any) {
+    }
+    
+    @IBAction func btnNext(_ sender: Any) {
+    }
+    @IBAction func btnFinish(_ sender: Any) {
+    }
+    @IBAction func btnExit(_ sender: Any) {
+    }
 
 }

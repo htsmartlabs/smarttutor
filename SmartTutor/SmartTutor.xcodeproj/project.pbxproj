@@ -15,6 +15,7 @@
 		51419F2B1F984DD000B68365 /* QuestionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51419F2A1F984DD000B68365 /* QuestionVC.swift */; };
 		51419F2E1F98640900B68365 /* BorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51419F2D1F98640900B68365 /* BorderButton.swift */; };
 		51419F301F986E1100B68365 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 51419F2F1F986B0500B68365 /* GoogleService-Info.plist */; };
+		51419F341F98DA0200B68365 /* MathOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51419F331F98DA0200B68365 /* MathOperation.swift */; };
 		EA9C5B2AD6800559AA68900F /* Pods_SmartTutor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5BF5B34411657CB8DBA24BD /* Pods_SmartTutor.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,7 @@
 		51419F2A1F984DD000B68365 /* QuestionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionVC.swift; sourceTree = "<group>"; };
 		51419F2D1F98640900B68365 /* BorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderButton.swift; sourceTree = "<group>"; };
 		51419F2F1F986B0500B68365 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		51419F331F98DA0200B68365 /* MathOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathOperation.swift; sourceTree = "<group>"; };
 		9E8276AA8852D17FBACEECD4 /* Pods-SmartTutor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartTutor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartTutor/Pods-SmartTutor.debug.xcconfig"; sourceTree = "<group>"; };
 		D5BF5B34411657CB8DBA24BD /* Pods_SmartTutor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartTutor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -67,6 +69,7 @@
 		51419F161F984B5C00B68365 /* SmartTutor */ = {
 			isa = PBXGroup;
 			children = (
+				51419F321F98D9B100B68365 /* Model */,
 				51419F2C1F9863E700B68365 /* View */,
 				51419F291F984C8C00B68365 /* Controller */,
 				51419F171F984B5C00B68365 /* AppDelegate.swift */,
@@ -94,6 +97,14 @@
 				51419F2D1F98640900B68365 /* BorderButton.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		51419F321F98D9B100B68365 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				51419F331F98DA0200B68365 /* MathOperation.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		E6C93AB692985641555E2FC6 /* Frameworks */ = {
@@ -246,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				51419F1A1F984B5C00B68365 /* MainMenuVC.swift in Sources */,
+				51419F341F98DA0200B68365 /* MathOperation.swift in Sources */,
 				51419F2B1F984DD000B68365 /* QuestionVC.swift in Sources */,
 				51419F181F984B5C00B68365 /* AppDelegate.swift in Sources */,
 				51419F2E1F98640900B68365 /* BorderButton.swift in Sources */,
