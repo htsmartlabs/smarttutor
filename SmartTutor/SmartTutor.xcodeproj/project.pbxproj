@@ -14,9 +14,12 @@
 		51419F221F984B5C00B68365 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51419F201F984B5C00B68365 /* LaunchScreen.storyboard */; };
 		51419F2B1F984DD000B68365 /* QuestionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51419F2A1F984DD000B68365 /* QuestionVC.swift */; };
 		51419F2E1F98640900B68365 /* BorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51419F2D1F98640900B68365 /* BorderButton.swift */; };
+		51419F301F986E1100B68365 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 51419F2F1F986B0500B68365 /* GoogleService-Info.plist */; };
+		EA9C5B2AD6800559AA68900F /* Pods_SmartTutor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5BF5B34411657CB8DBA24BD /* Pods_SmartTutor.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00A0B91C57DFA7B8BD3EACDB /* Pods-SmartTutor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartTutor.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartTutor/Pods-SmartTutor.release.xcconfig"; sourceTree = "<group>"; };
 		51419F141F984B5C00B68365 /* SmartTutor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartTutor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51419F171F984B5C00B68365 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51419F191F984B5C00B68365 /* MainMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuVC.swift; sourceTree = "<group>"; };
@@ -26,6 +29,9 @@
 		51419F231F984B5C00B68365 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		51419F2A1F984DD000B68365 /* QuestionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionVC.swift; sourceTree = "<group>"; };
 		51419F2D1F98640900B68365 /* BorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderButton.swift; sourceTree = "<group>"; };
+		51419F2F1F986B0500B68365 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9E8276AA8852D17FBACEECD4 /* Pods-SmartTutor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartTutor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartTutor/Pods-SmartTutor.debug.xcconfig"; sourceTree = "<group>"; };
+		D5BF5B34411657CB8DBA24BD /* Pods_SmartTutor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartTutor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA9C5B2AD6800559AA68900F /* Pods_SmartTutor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +51,8 @@
 			children = (
 				51419F161F984B5C00B68365 /* SmartTutor */,
 				51419F151F984B5C00B68365 /* Products */,
+				F92A374A18C3E507662F9188 /* Pods */,
+				E6C93AB692985641555E2FC6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,6 +74,7 @@
 				51419F1E1F984B5C00B68365 /* Assets.xcassets */,
 				51419F201F984B5C00B68365 /* LaunchScreen.storyboard */,
 				51419F231F984B5C00B68365 /* Info.plist */,
+				51419F2F1F986B0500B68365 /* GoogleService-Info.plist */,
 			);
 			path = SmartTutor;
 			sourceTree = "<group>";
@@ -86,6 +96,23 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		E6C93AB692985641555E2FC6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5BF5B34411657CB8DBA24BD /* Pods_SmartTutor.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F92A374A18C3E507662F9188 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9E8276AA8852D17FBACEECD4 /* Pods-SmartTutor.debug.xcconfig */,
+				00A0B91C57DFA7B8BD3EACDB /* Pods-SmartTutor.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -93,9 +120,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 51419F261F984B5C00B68365 /* Build configuration list for PBXNativeTarget "SmartTutor" */;
 			buildPhases = (
+				9FA6D897DD29B7997CFBB2FD /* [CP] Check Pods Manifest.lock */,
 				51419F101F984B5C00B68365 /* Sources */,
 				51419F111F984B5C00B68365 /* Frameworks */,
 				51419F121F984B5C00B68365 /* Resources */,
+				57F147BBDF48B5DD8B401826 /* [CP] Embed Pods Frameworks */,
+				08383945F9E2699C8C1642C1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -146,12 +176,69 @@
 			buildActionMask = 2147483647;
 			files = (
 				51419F221F984B5C00B68365 /* LaunchScreen.storyboard in Resources */,
+				51419F301F986E1100B68365 /* GoogleService-Info.plist in Resources */,
 				51419F1F1F984B5C00B68365 /* Assets.xcassets in Resources */,
 				51419F1D1F984B5C00B68365 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		08383945F9E2699C8C1642C1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartTutor/Pods-SmartTutor-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		57F147BBDF48B5DD8B401826 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SmartTutor/Pods-SmartTutor-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmartTutor/Pods-SmartTutor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FA6D897DD29B7997CFBB2FD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmartTutor-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		51419F101F984B5C00B68365 /* Sources */ = {
@@ -296,6 +383,7 @@
 		};
 		51419F271F984B5C00B68365 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E8276AA8852D17FBACEECD4 /* Pods-SmartTutor.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -311,6 +399,7 @@
 		};
 		51419F281F984B5C00B68365 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00A0B91C57DFA7B8BD3EACDB /* Pods-SmartTutor.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

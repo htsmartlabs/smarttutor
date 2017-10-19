@@ -24,13 +24,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="windowShopperBG" translatesAutoresizingMaskIntoConstraints="NO" id="np5-DX-dVd" userLabel="BackgroundImageView">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="16" width="375" height="651"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ep5-EL-udG" userLabel="TopAdView">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="66.5"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8H5-OE-ski" userLabel="TopAd">
-                                        <rect key="frame" x="27" y="0.0" width="320" height="50"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8H5-OE-ski" userLabel="TopAd" customClass="GADBannerView">
+                                        <rect key="frame" x="27" y="16" width="320" height="50"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="KAx-BR-nZu"/>
@@ -41,7 +41,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="8H5-OE-ski" firstAttribute="centerX" secondItem="Ep5-EL-udG" secondAttribute="centerX" id="bkz-jv-FcI"/>
-                                    <constraint firstItem="8H5-OE-ski" firstAttribute="top" secondItem="Ep5-EL-udG" secondAttribute="top" id="qJf-EO-bT7"/>
+                                    <constraint firstItem="8H5-OE-ski" firstAttribute="top" secondItem="Ep5-EL-udG" secondAttribute="top" constant="16" id="qJf-EO-bT7"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="si8-6j-naw" userLabel="TitleView">
@@ -66,6 +66,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p7e-td-KvF" userLabel="AddButton" customClass="BorderButton" customModule="SmartTutor" customModuleProvider="target">
                                         <rect key="frame" x="10" y="10" width="169" height="180"/>
                                         <state key="normal" image="btn_plus"/>
+                                        <connections>
+                                            <segue destination="v6B-Db-2rk" kind="show" id="7bp-cI-Mqn"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t0q-Qd-tBb" userLabel="SubButton" customClass="BorderButton" customModule="SmartTutor" customModuleProvider="target">
                                         <rect key="frame" x="196.5" y="10" width="168.5" height="180"/>
@@ -111,7 +114,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fMS-5M-epY" userLabel="BottomAdView">
                                 <rect key="frame" x="0.0" y="600.5" width="375" height="66.5"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ooI-Fj-Ite" userLabel="BottomAd">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ooI-Fj-Ite" userLabel="BottomAd" customClass="GADBannerView">
                                         <rect key="frame" x="27" y="16.5" width="320" height="50"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -148,7 +151,7 @@
                             <constraint firstItem="np5-DX-dVd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Zfa-hJ-s1S"/>
                             <constraint firstItem="Ep5-EL-udG" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.1" id="ita-pW-CsO"/>
                             <constraint firstItem="Ep5-EL-udG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="mGo-ab-dDd"/>
-                            <constraint firstItem="np5-DX-dVd" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="mWq-ka-A9e"/>
+                            <constraint firstItem="np5-DX-dVd" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="16" id="mWq-ka-A9e"/>
                             <constraint firstItem="si8-6j-naw" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.2" id="n7V-8A-3wN"/>
                             <constraint firstItem="fMS-5M-epY" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="npl-T5-RIk"/>
                             <constraint firstItem="fMS-5M-epY" firstAttribute="top" secondItem="b8C-58-a6w" secondAttribute="bottom" id="pNa-Bh-IcR"/>
@@ -161,10 +164,42 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="bottomAdView" destination="ooI-Fj-Ite" id="7MF-uj-d0K"/>
+                        <outlet property="topAdView" destination="8H5-OE-ski" id="rvB-3P-GBR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="138.40000000000001" y="132.68365817091455"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="cGS-ml-LIE">
+            <objects>
+                <viewController id="v6B-Db-2rk" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iWq-F6-BS1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="windowShopperBG" translatesAutoresizingMaskIntoConstraints="NO" id="ZVS-Sq-PBo">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="hello Dear" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="brb-RF-6k3">
+                                <rect key="frame" x="83" y="187" width="242" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="E3e-oH-vHn"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IbB-EM-RAX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="964" y="141.67916041979012"/>
         </scene>
     </scenes>
     <resources>
