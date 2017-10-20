@@ -321,34 +321,46 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="atQ-0M-DsO" userLabel="AnsView">
                                 <rect key="frame" x="0.0" y="400" width="375" height="133.5"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PPW-Sn-989" customClass="BorderButton" customModule="SmartTutor" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PPW-Sn-989" customClass="BorderButton" customModule="SmartTutor" customModuleProvider="target">
                                         <rect key="frame" x="10" y="10" width="172.5" height="52"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <state key="normal" title="Button"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.25" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                        <state key="normal" title="0">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
                                         <connections>
                                             <action selector="onAnswerSelected:" destination="v6B-Db-2rk" eventType="touchUpInside" id="ZzZ-xm-TbV"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dcT-qL-ntN" customClass="BorderButton" customModule="SmartTutor" customModuleProvider="target">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dcT-qL-ntN" customClass="BorderButton" customModule="SmartTutor" customModuleProvider="target">
                                         <rect key="frame" x="192.5" y="10" width="172.5" height="52"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <state key="normal" title="Button"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.25" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                        <state key="normal" title="0">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
                                         <connections>
                                             <action selector="onAnswerSelected:" destination="v6B-Db-2rk" eventType="touchUpInside" id="xOi-Gd-4iW"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ax0-qj-6O9" customClass="BorderButton" customModule="SmartTutor" customModuleProvider="target">
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ax0-qj-6O9" customClass="BorderButton" customModule="SmartTutor" customModuleProvider="target">
                                         <rect key="frame" x="10" y="72" width="172.5" height="52"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <state key="normal" title="Button"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                        <state key="normal" title="0">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
                                         <connections>
                                             <action selector="onAnswerSelected:" destination="v6B-Db-2rk" eventType="touchUpInside" id="7ga-Mo-FVs"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yhy-EX-2zR" customClass="BorderButton" customModule="SmartTutor" customModuleProvider="target">
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yhy-EX-2zR" customClass="BorderButton" customModule="SmartTutor" customModuleProvider="target">
                                         <rect key="frame" x="192.5" y="72" width="172.5" height="52"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <state key="normal" title="Button"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.25" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                        <state key="normal" title="0">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
                                         <connections>
                                             <action selector="onAnswerSelected:" destination="v6B-Db-2rk" eventType="touchUpInside" id="aho-pa-AcG"/>
                                         </connections>
@@ -411,7 +423,7 @@
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <state key="normal" image="btn_exit"/>
                                                 <connections>
-                                                    <action selector="btnExit:" destination="v6B-Db-2rk" eventType="touchUpInside" id="vHk-PI-Ete"/>
+                                                    <segue destination="iY5-7a-rNr" kind="unwind" unwindAction="unwindFromQuestionVCWithUnwindSegue:" id="4UE-mP-oUA"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -490,6 +502,10 @@
                     </view>
                     <connections>
                         <outlet property="bottomAdVew" destination="UDZ-9R-A29" id="gfa-8p-oUc"/>
+                        <outlet property="btnAns1" destination="PPW-Sn-989" id="JQ8-dN-oR3"/>
+                        <outlet property="btnAns2" destination="dcT-qL-ntN" id="1pC-7I-bpq"/>
+                        <outlet property="btnAns3" destination="ax0-qj-6O9" id="kWy-9K-OxZ"/>
+                        <outlet property="btnAns4" destination="Yhy-EX-2zR" id="7XT-kN-meV"/>
                         <outlet property="lblQuestion" destination="lOg-8d-4c1" id="jUH-ig-iQ5"/>
                         <outlet property="lblRight" destination="e6Q-Ka-ITT" id="k8W-1p-CYk"/>
                         <outlet property="lblTitle" destination="Ukh-9v-moa" id="lVj-bK-yWU"/>
